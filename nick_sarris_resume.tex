@@ -1,0 +1,202 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Nicholas Sarris} \\ \vspace{5pt}
+    \small 757-334-0477 $|$
+    \small sarris.nick@verizon.net $|$ 
+    \small github.com/blinkhash $|$
+    \small linkedin.com/in/nick-sarris-b07a75185/ 
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Virginia}{Charlottesville, VA}
+      {B.S. of Computer Science}{May, 2020}
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Capital One}{McLean, VA}
+      {Senior Associate Software Engineer}{May 2020 – Present}
+      \resumeItemListStart
+        \resumeItem{Worked alongside designers and other developers in an AGILE environment to implement multiple key features on the Capital One's Finance Platform from concept to deployment.}
+        \resumeItem{Trained and mentored new junior developers. I organized peer reviews and pair programming to help them learn methodology and best practices}
+        \resumeItem{Personally coordinated and was in charge of the rewrite of my team's inherited project. I was the main point of contact for multiple teams and presented the finished product to UX and management.}
+        \resumeItem{Obtained my AWS Solutions Architect and CSSE certifications}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Stipend}{Remote}
+      {Co-Founder \& Blockchain Developer}{Feb 2018 - Mar 2020}
+      \resumeItemListStart
+        \resumeItem{Leveraged existing blockchain code to develop the blockchain and wallets currently integrated and running smoothly on the Stipend network.}
+        \resumeItem{Created API bindings to facilitate easy access to the Stipend blockchain through Node.js}
+        \resumeItem{Worked alongside three other developers to code the Stipend platform, a scalable responsive, freelancing web application built on top of the Stipend blockchain.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Northrop Grumman}{McLean, VA}
+      {Technical Intern}{Jun-Aug 2017, Jun-Aug 2018}
+      \resumeItemListStart
+        \resumeItem{(2018) - Worked on a team of developers under an AGILE development process for the TARGET IRAD}
+        \resumeItem{(2018) - Personally developed and implemented a REST API leveraging my own modified BERT-base model, fine-tuned on an expansive dataset of CNN news articles for purposes of document summarization.}
+        \resumeItem{(2017) - Worked on a team of developers under an AGILE development process for the COBRA IRAD}
+        \resumeItem{(2017) - Used Doc2Vec and other Machine Learning (NLP) techniques to classify and score blog articles found on the Internet, exploring how similar the content was to cybersecurity TTPs (Tactics, Techniques, and Procedures) found on MITRE's ATT\&CK table.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{1pt}
+    \resumeSubHeadingListStart
+    
+      \resumeProjectHeading
+          {\textbf{Blinkhash} $|$ \emph{https://blinkhash.com}}{June 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Built from scratch an expansive website using Next.js that allows users to "link" their crypto-currency mining pools in order to leverage a UI and a suite of analytical tools.}
+            \resumeItem{Built out a backend service using Express.js that periodically requests data from "linked" mining pools to update their platform display. I also leveraged AWS's API gateway and a series of Lambdas for a secured API that handles all relevant updates.}
+            \resumeItem{Built out CI/CD pipelines using Docker and Jenkins that automate updates whenever a commit is pushed.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Foundation} $|$ \emph{https://github.com/blinkhash/foundation-server}}{June 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Revived and took over development of NOMP, a open-source solution for crypto-currency mining pools.}
+            \resumeItem{Wrote extensive documentation explaining every aspect of the project.}
+            \resumeItem{Currently supporting a community invested in the project whom frequently request updates and ask questions.}
+          \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \vspace{4pt}
+    \small{\item{
+     \textbf{Languages}{: Javascript, Typescript, Python, Java} \\
+     \textbf{Frameworks}{: React.js, Node.js, Express.js, Angular.js, Next.js} \\
+     \textbf{Developer Tools}{: AWS, Docker, Jenkins} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
